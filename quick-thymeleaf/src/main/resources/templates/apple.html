@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+      layout:decorate="layout">
+<head>
+    <title>success view</title>
+</head>
+<body>
+
+<h1 layout:fragment="header">Apples</h1>
+<div layout:fragment="content" class="container">
+    <table class="table table-bordered table-striped">
+        <tr th:each="apple : ${apples}">
+            <td th:text="${apple.color}">color</td>
+            <td th:text="${apple.price}">price</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
