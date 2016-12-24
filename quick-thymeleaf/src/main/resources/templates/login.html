@@ -4,10 +4,10 @@
       layout:decorate="layout">
 <head>
     <title>user login</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
 </head>
 <body>
 
-<h1 layout:fragment="header">User Login</h1>
 <div layout:fragment="content" class="container">
     <form action="/user/login" method="post" th:object="${user}">
 
@@ -16,10 +16,15 @@
                 Validation error</p>
         </div>
 
-        <span style="color: red;" th:text="${errorMsg}"/>
+        <span th:text="${errorMsg}" class="label label-danger"/>
 
-        <input type="text" name="username" placeholder="用户名"/>
-        <input type="password" name="password" placeholder="密  码"/>
+        <div class="input-group">
+            <input type="text" name="username" placeholder="用户名" class="form-control"/>
+        </div>
+
+        <div class="input-group">
+            <input type="password" name="password" placeholder="密  码" class="form-control"/>
+        </div>
 
         <div class="form-actions">
             <input type="submit" value="Login"/>

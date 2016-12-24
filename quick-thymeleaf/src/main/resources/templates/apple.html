@@ -4,12 +4,18 @@
       layout:decorate="layout">
 <head>
     <title>success view</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
 </head>
 <body>
 
-<h1 layout:fragment="header">Apples</h1>
 <div layout:fragment="content" class="container">
     <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <td>颜色</td>
+            <td>价格</td>
+        </tr>
+        </thead>
         <tr th:each="apple : ${apples}">
             <td th:text="${apple.color}">color</td>
             <td th:text="${apple.price}">price</td>
