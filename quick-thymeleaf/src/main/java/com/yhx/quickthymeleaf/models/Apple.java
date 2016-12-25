@@ -38,7 +38,4 @@ public class Apple {
                 p -> colors.stream().map(c -> new Apple(p, c))).collect(toList());
     }
 
-    public static void main(String[] args) {
-        System.out.println(generateApples());
-    }
 }

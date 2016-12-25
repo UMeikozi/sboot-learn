@@ -5,6 +5,6 @@ spring:
     mvc:
       dispatch-options-request: false
     thymeleaf:
-        prefix: classpath:/templates # 一定要配置,不然打成jar时无法解析html
         cache: false
         mode: HTML5
+        prefix: classpath:/templates # 一定要配置,不然打成jar时无法解析html

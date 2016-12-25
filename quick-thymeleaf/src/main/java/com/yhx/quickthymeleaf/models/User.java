@@ -26,6 +26,12 @@ public class User {
     @Length(min = 6, message = "密码长度不能小于6位")
     private String password;
 
+    /**
+     * 校验是否合法用户
+     *
+     * @param user
+     * @return
+     */
     public static boolean isUserValid(User user) {
         return "admin".equals(user.getUsername()) && "123456".equals(user.getPassword());
     }
