@@ -1,0 +1,17 @@
+server:
+    port: 8089
+
+spring:
+    thymeleaf:
+          prefix: classpath:/templates # 一定要配置,不然打成jar时无法解析html
+
+mail:
+  protocol: smtp
+  host: smtp.qq.com
+  port: 25
+  smtpAuth: true
+  smtpStarttlsEnable: true
+  smtpSslTrust: smtp.qq.com
+  username: 335747019@qq.com
+# 此处为授权码
+  password: jrrinlmdgfdrbiad
