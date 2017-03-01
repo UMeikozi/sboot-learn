@@ -12,6 +12,6 @@ mail:
   smtpAuth: true
   smtpStarttlsEnable: true
   smtpSslTrust: smtp.qq.com
-  username: 335747019@qq.com
+  username: xxxxxx@qq.com
 # 此处为授权码
-  password: jrrinlmdgfdrbiad
+  password: xxxxxx
